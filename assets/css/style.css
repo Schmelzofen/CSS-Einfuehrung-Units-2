@@ -1,0 +1,47 @@
+/* Du solltest die einzelnen li-Elemente mit einem Wert von .8em stylen, sodass jede Ebene einen kleineren Text als die vorherige hat
+Setze die line-height Eigenschaft für jedes li-Element auf 1.5em
+Setze die Eigenschaft padding-inline-start für alle ul-Elemente auf 1.2em
+Setze die list-style Eigenschaft für jedes li-Element innerhalb eines ul-Elements einer bestimmten Tierkategorie auf einen passenden Emoji
+Setze die font-size und die border für die section mit Hilfe von rems */
+
+*{
+    width: 40rem;
+    font-family:'Courier New', Courier, monospace
+}
+section{
+    border: 0.2rem solid black;
+    font-size: 1rem;
+}
+
+ul{
+    padding-inline-start: 1.2em;
+    list-style-type: none;
+}
+
+li{
+    line-height: 1.5em;
+}
+
+section ul:nth-of-type(1) li:nth-of-type(4) ul:nth-of-type(1) li:nth-of-type(1) ul:nth-of-type(1){
+    color: red;
+}
+
+section ul:nth-of-type(1) li:nth-of-type(1) ul:nth-of-type(1) li:nth-of-type(1) ul:nth-of-type(1) li::before{
+    content: "🐶 ";
+}
+
+section ul:nth-of-type(1) li:nth-of-type(1) ul:nth-of-type(1) li:nth-of-type(2) ul:nth-of-type(1) li::before{
+    content: "🐱 "
+}
+
+section ul:nth-of-type(1) li:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) ul:nth-of-type(1) li::before{
+    content: "🦜 ";
+}
+
+section ul:nth-of-type(1) li:nth-of-type(3) ul:nth-of-type(1) li:nth-of-type(1) ul:nth-of-type(1) li::before{
+    content:"🐍 ";
+}
+
+section ul li:nth-of-type(3) ul li:nth-of-type(2) ul li::before{
+    content: "🦎 ";
+}
